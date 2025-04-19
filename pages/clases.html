@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FABRYKA GYM - Clases</title>
+    <link rel="icon" type="image/x-icon" href="../assets/svg/fabryka-gym-icon.svg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body>
+    <!-- Header con Mega Menú -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/images/logo.png" alt="" height="40">FABRYKA <span
+                        class="text-warning">GYM</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="clases.html" id="clasesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu mega-menu" aria-labelledby="clasesDropdown">
+                                <li><a class="dropdown-item" href="#yoga">Yoga</a></li>
+                                <li><a class="dropdown-item" href="#musculacion">Musculación</a></li>
+                                <li><a class="dropdown-item" href="#bicis">Bicis</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entrenadores.html">Entrenadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Clases -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestras Clases</h2>
+            <!-- Filtros -->
+            <div class="filters text-center mb-4">
+                <input type="radio" name="filter" id="filter-all" class="filter-checkbox" data-filter="all" checked>
+                <label for="filter-all" class="btn btn-outline-primary">Todas</label>
+                <input type="radio" name="filter" id="filter-yoga" class="filter-checkbox" data-filter="yoga">
+                <label for="filter-yoga" class="btn btn-outline-primary">Yoga</label>
+                <input type="radio" name="filter" id="filter-musculacion" class="filter-checkbox"
+                    data-filter="musculacion">
+                <label for="filter-musculacion" class="btn btn-outline-primary">Musculación</label>
+                <input type="radio" name="filter" id="filter-bicis" class="filter-checkbox" data-filter="bicis">
+                <label for="filter-bicis" class="btn btn-outline-primary">Bicis</label>
+            </div>
+            <!-- Galería Masonry -->
+            <div class="masonry-grid">
+                <div class="masonry-item" data-category="yoga">
+                    <div class="card">
+                        <div class="card-img bg-yoga_avanzado">
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Yoga Avanzado</h5>
+                            <p class="card-text">Mejora tu flexibilidad y bienestar mental.</p>
+                            <a href="#yoga" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="musculacion">
+                    <div class="card">
+                        <div class="card-img bg-musculacion">
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Musculación</h5>
+                            <p class="card-text">Desarrolla fuerza y resistencia.</p>
+                            <a href="#musculacion" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="bicis">
+                    <div class="card">
+                        <div class="card-img bg-bicis">
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bicis</h5>
+                            <p class="card-text">Quema calorías con nuestras clases de spinning.</p>
+                            <a href="#bicis" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="musculacion">
+                    <div class="card">
+                        <div class="card-img bg-musculacion2">
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Musculación Avanzada</h5>
+                            <p class="card-text">Entrenamiento intensivo para resultados máximos.</p>
+                            <a href="#musculacion" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla de Horarios -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Horarios de Clases</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sábado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00</td>
+                            <td>Yoga</td>
+                            <td>-</td>
+                            <td>Yoga</td>
+                            <td>-</td>
+                            <td>Yoga</td>
+                            <td>Bicis</td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>Musculación</td>
+                            <td>Bicis</td>
+                            <td>Musculación</td>
+                            <td>Bicis</td>
+                            <td>Musculación</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>18:00</td>
+                            <td>Bicis</td>
+                            <td>Yoga</td>
+                            <td>Bicis</td>
+                            <td>Yoga</td>
+                            <td>Bicis</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>20:00</td>
+                            <td>Musculación</td>
+                            <td>Musculación</td>
+                            <td>Musculación</td>
+                            <td>Musculación</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>FABRYKA GYM</h5>
+                    <p>Tu lugar para entrenar y crecer.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                            <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <div class="invalid-feedback">Por favor, ingresa un email válido.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar <span
+                                class="spinner-border spinner-border-sm d-none" role="status"
+                                aria-hidden="true"></span></button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h5>Mapa</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery/jquery-3.7.1.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/precios.js"></script>
+    <script src="../js/animaciones.js"></script>
+    <script src="../js/filtros.js"></script>
+    <script src="../js/contadores.js"></script>
+    <script src="../js/habilidades.js"></script>
+    <script src="../js/rating.js"></script>
+    <script src="../js/carrusel.js"></script>
+    <script src="../js/formularios.js"></script>
+</body>
+
+</html>

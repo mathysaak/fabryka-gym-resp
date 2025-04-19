@@ -1,0 +1,37 @@
+# Archivos de sistema y editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log
+.idea/
+.vscode/
+
+# Dependencias y paquetes
+node_modules/
+package-lock.json
+jspm_packages/
+
+# Archivos de construcción y desarrollo
+/dist/
+/build/
+*.tmp
+*.temp
+
+# Cache y archivos generados
+.cache/
+*.cache
+*.min.js
+*.min.css
+
+# Entornos y variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Archivos de usuario (opcional, según lo que tengas)
+
+# Archivos multimedia pesados (opcional)
+/assets/videos/*.mp4  # Si son muy grandes, mejor subirlos aparte
+/assets/gif/

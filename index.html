@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FABRYKA GYM - Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/svg/fabryka-gym-icon.svg">`
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- CountUp.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.min.js"></script>
+</head>
+<body>
+    <!-- Header con Mega Menú -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="" height="40">FABRYKA <span class="text-warning">GYM</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="pages/clases.html" id="clasesDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu mega-menu" aria-labelledby="clasesDropdown">
+                                <li><a class="dropdown-item" href="pages/clases.html#yoga">Yoga</a></li>
+                                <li><a class="dropdown-item" href="pages/clases.html#musculacion">Musculación</a></li>
+                                <li><a class="dropdown-item" href="pages/clases.html#bicis">Bicis</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/entrenadores.html">Entrenadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero con video de fondo -->
+    <section class="hero position-relative text-white text-center">
+        <video autoplay muted loop class="hero-video">
+            <source src="assets/videos/hero-gym-video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+        <div class="container position-relative z-1">
+            <h1 class="display-4 mb-4 hero-title">Bienvenido a FABRYKA GYM</h1>
+            <p class="lead mb-4 hero-subtitle">Transforma tu cuerpo, alcanza tus metas.</p>
+            <a href="pages/precios.html" class="btn btn-primary btn-lg">Únete Ahora</a>
+        </div>
+    </section>
+
+    <!-- Clases destacadas -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Clases Destacadas</h2>
+            <div class="masonry-grid">
+                <div class="masonry-item">
+                    <div class="card">
+                        <div class="card-img bg-yoga_avanzado">
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Yoga Avanzado</h5>
+                            <p class="card-text">Mejora tu flexibilidad y bienestar mental.</p>
+                            <a href="pages/clases.html#yoga" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <div class="card">
+                        <div class="card-img bg-musculacion">
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Musculación</h5>
+                            <p class="card-text">Desarrolla fuerza y resistencia.</p>
+                            <a href="pages/clases.html#musculacion" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <div class="card">
+                        <div class="card-img bg-bicis">
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-0"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bicis</h5>
+                            <p class="card-text">Quema calorías con nuestras clases de spinning.</p>
+                            <a href="pages/clases.html#bicis" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contador animado -->
+    <section class="py-5 bg-dark text-white text-center counter-section">
+        <div class="container">
+            <h2 class="mb-4">Nuestros Números</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="counter" data-target="1000">0</h3>
+                    <p>Miembros Activos</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="counter" data-target="50">0</h3>
+                    <p>Clases Semanales</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="counter" data-target="20">0</h3>
+                    <p>Entrenadores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios en carrusel -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimonios</h2>
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center">
+                            <div class="card-img bg-testimonio rounded-circle mb-3 mx-auto"
+                                style="width: 100px; height: 100px;"></div>
+                            <p class="lead">"FABRYKA GYM cambió mi vida. Los entrenadores son increíbles."</p>
+                            <h5>Laura Gómez</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <div class="card-img bg-testimonio3 rounded-circle mb-3 mx-auto"
+                                style="width: 100px; height: 100px;"></div>
+                            <p class="lead">"Las clases de spinning son adictivas. ¡Altamente recomendado!"</p>
+                            <h5>Carlos Ruiz</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <div class="card-img bg-crossfit rounded-circle mb-3 mx-auto"
+                                style="width: 100px; height: 100px;"></div>
+                            <p class="lead">"El ambiente es motivador y los planes son accesibles."</p>
+                            <h5>María Fernández</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>FABRYKA GYM</h5>
+                    <p>Tu lugar para entrenar y crecer.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                            <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <div class="invalid-feedback">Por favor, ingresa un email válido.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar <span
+                                class="spinner-border spinner-border-sm d-none" role="status"
+                                aria-hidden="true"></span></button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h5>Mapa</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." style="width:100%; height:200px; border:0;" 
+                    allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery/jquery-3.7.1.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/precios.js"></script>
+    <script src="js/animaciones.js"></script>
+    <script src="js/filtros.js"></script>
+    <script src="js/contadores.js"></script>
+    <script src="js/habilidades.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/formularios.js"></script>
+</body>
+
+</html>

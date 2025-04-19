@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FABRYKA GYM - Contacto</title>
+    <link rel="icon" type="image/x-icon" href="../assets/svg/fabryka-gym-icon.svg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body>
+    <!-- Header con Mega Menú -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/images/logo.png" alt="" height="40">FABRYKA <span
+                        class="text-warning">GYM</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="clases.html" id="clasesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu mega-menu" aria-labelledby="clasesDropdown">
+                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga</a></li>
+                                <li><a class="dropdown-item" href="clases.html#musculacion">Musculación</a></li>
+                                <li><a class="dropdown-item" href="clases.html#bicis">Bicis</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entrenadores.html">Entrenadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Contacto -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Formulario de Contacto</h4>
+                    <form id="contactFormMain" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                            <div class="valid-feedback">¡Perfecto!</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+                            <div class="valid-feedback">¡Email válido!</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tu mensaje"
+                                required></textarea>
+                            <div class="invalid-feedback">Por favor escribe tu mensaje.</div>
+                            <div class="valid-feedback">¡Mensaje listo!</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="submit-text">Enviar</span>
+                            <span class="spinner-border spinner-border-sm d-none" role="status"
+                                aria-hidden="true"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <!-- ... resto del código ... -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Confirmación -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">¡Mensaje Enviado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Gracias por contactarnos. Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto.
+                    </p>
+                    <p class="mb-0">¡Que tengas un excelente día!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>FABRYKA GYM</h5>
+                    <p>Tu lugar para entrenar y crecer.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h5>Mapa</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery/jquery-3.7.1.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/precios.js"></script>
+    <script src="../js/animaciones.js"></script>
+    <script src="../js/filtros.js"></script>
+    <script src="../js/contadores.js"></script>
+    <script src="../js/habilidades.js"></script>
+    <script src="../js/rating.js"></script>
+    <script src="../js/carrusel.js"></script>
+    <script src="../js/formularios.js"></script>
+</body>
+
+</html>

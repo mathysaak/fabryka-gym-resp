@@ -1,0 +1,94 @@
+/* ------------------------- */
+/* ESTILOS PARA CONTACTO */
+/* ------------------------- */
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+/* Estilos para Blog */
+.card-img-top {
+    transition: opacity 0.3s ease;
+}
+
+/* Spinner en formulario */
+.spinner-border {
+    vertical-align: middle;
+}
+
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.9rem;
+    }
+    .card-img:not(.rounded-circle), .card-img-top {
+        height: 200px;
+    }
+    .hero {
+        height: 80vh;
+    }
+    .counter {
+        font-size: 2rem;
+    }
+    .carousel-item .card-img.rounded-circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.table-hover th {
+    cursor: pointer;
+}
+
+.table-hover .bg-light {
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para validación de formularios */
+.needs-validation .form-control:valid {
+    border-color: #28a745;
+}
+
+.needs-validation .form-control:invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback, .valid-feedback {
+    display: none;
+}
+
+.is-invalid ~ .invalid-feedback,
+.is-valid ~ .valid-feedback {
+    display: block;
+}
+
+/* Estilos para el botón con spinner */
+.btn .spinner-border {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* Transición suave para los feedbacks */
+.form-control, .invalid-feedback, .valid-feedback {
+    transition: all 0.3s ease;
+}
+
+/* Modal personalizado */
+#confirmationModal .modal-content {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#confirmationModal .modal-header {
+    background-color: var(--bs-primary);
+    color: white;
+    border-bottom: none;
+}
+
+#confirmationModal .modal-body {
+    padding: 2rem;
+    font-size: 1.1rem;
+}

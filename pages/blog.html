@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FABRYKA GYM - Blog</title>
+    <link rel="icon" type="image/x-icon" href="../assets/svg/fabryka-gym-icon.svg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body>
+    <!-- Header con Mega Menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/images/logo.png" alt="" height="40">FABRYKA <span
+                        class="text-warning">GYM</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="clases.html" id="clasesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu mega-menu" aria-labelledby="clasesDropdown">
+                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga</a></li>
+                                <li><a class="dropdown-item" href="clases.html#musculacion">Musculación</a></li>
+                                <li><a class="dropdown-item" href="clases.html#bicis">Bicis</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entrenadores.html">Entrenadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seccin de Blog -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestro Blog Fitness</h2>
+
+            <!-- Filtros por Tags -->
+            <div class="text-center mb-5">
+                <div class="btn-group tag-filter" role="group">
+                    <button type="button" class="btn btn-outline-primary active" data-tag="todos">Todos</button>
+                    <button type="button" class="btn btn-outline-primary" data-tag="nutricion">Nutrición</button>
+                    <button type="button" class="btn btn-outline-primary"
+                        data-tag="entrenamiento">Entrenamiento</button>
+                    <button type="button" class="btn btn-outline-primary" data-tag="motivacion">Motivación</button>
+                    <button type="button" class="btn btn-outline-primary" data-tag="salud">Salud</button>
+                </div>
+            </div>
+
+            <!-- Diseño tipo periodico con CSS Grid -->
+            <div class="blog-grid">
+                <!-- Artculo destacado -->
+                <article class="blog-card featured" data-tag="nutricion" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-img bg-nutricion">
+                            <div class="overlay"></div>
+                            <span class="badge bg-primary">Destacado</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-secondary">Nutrición</span>
+                                <span class="badge bg-secondary">Salud</span>
+                            </div>
+                            <h3 class="card-title">Guía Completa de Nutrición Deportiva</h3>
+                            <p class="card-text">Descubre cómo optimizar tu alimentación para maximizar tus resultados
+                                en el gimnasio y mejorar tu rendimiento deportivo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary">Leer artículo</a>
+                                <small class="text-muted">Publicado hace 2 días</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artculos regulares -->
+                <article class="blog-card" data-tag="entrenamiento" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card">
+                        <div class="card-img bg-clases">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-secondary">Entrenamiento</span>
+                            </div>
+                            <h3 class="card-title">Rutinas de Entrenamiento Funcional</h3>
+                            <p class="card-text">Aprende los mejores ejercicios funcionales para mejorar tu movilidad y
+                                fuerza en el día a día.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary">Leer artículo</a>
+                                <small class="text-muted">Publicado hace 1 semana</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-tag="motivacion" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img bg-motivacion">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-secondary">Motivación</span>
+                            </div>
+                            <h3 class="card-title">Cómo Mantener la Constancia</h3>
+                            <p class="card-text">Estrategias psicológicas para no abandonar tus objetivos fitness.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary">Leer artículo</a>
+                                <small class="text-muted">Publicado hace 2 semanas</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-tag="salud" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card">
+                        <div class="card-img bg-salud">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-secondary">Salud</span>
+                                <span class="badge bg-secondary">Nutrición</span>
+                            </div>
+                            <h3 class="card-title">Suplementos Naturales</h3>
+                            <p class="card-text">Qué alimentos pueden ayudarte a mejorar tu rendimiento sin químicos.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary">Leer artículo</a>
+                                <small class="text-muted">Publicado hace 3 semanas</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-tag="entrenamiento" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card">
+                        <div class="card-img bg-tecnica">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="tags mb-2">
+                                <span class="badge bg-secondary">Entrenamiento</span>
+                            </div>
+                            <h3 class="card-title">Técnicas Avanzadas de Levantamiento</h3>
+                            <p class="card-text">Mejora tu forma y evita lesiones con estos consejos profesionales.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary">Leer artículo</a>
+                                <small class="text-muted">Publicado hace 1 mes</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Seccion de Comentarios -->
+            <div class="comments-section mt-5" data-aos="fade-up">
+                <h4 class="mb-4">Comentarios</h4>
+
+                <div class="comment-list">
+                    <!-- Comentario principal -->
+                    <div class="comment mb-4">
+                        <div class="comment-header d-flex align-items-center">
+                            <div class="comment-avatar" style="background-color: #6c757d;">JP</div>
+                            <div class="comment-author ms-3">
+                                <strong>Juan Pérez</strong>
+                                <small class="text-muted">Hace 2 días</small>
+                            </div>
+                        </div>
+                        <div class="comment-body mt-2">
+                            <p>Excelente artículo, justo lo que necesitaba para mejorar mi dieta. ¿Algún consejo
+                                específico para vegetarianos?</p>
+                            <button class="btn btn-sm btn-outline-primary reply-btn">Responder</button>
+                        </div>
+
+                        <!-- Respuesta -->
+                        <div class="comment-reply mt-3 ms-5">
+                            <div class="comment">
+                                <div class="comment-header d-flex align-items-center">
+                                    <div class="comment-avatar" style="background-color: #0d6efd;">AD</div>
+                                    <div class="comment-author ms-3">
+                                        <strong>Ana Díaz (Nutricionista)</strong>
+                                        <small class="text-muted">Hace 1 día</small>
+                                    </div>
+                                </div>
+                                <div class="comment-body mt-2">
+                                    <p>Para vegetarianos recomiendo aumentar el consumo de quinoa, legumbres y frutos
+                                        secos para obtener proteínas completas.</p>
+                                    <button class="btn btn-sm btn-outline-primary reply-btn">Responder</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Otro comentario -->
+                    <div class="comment mb-4">
+                        <div class="comment-header d-flex align-items-center">
+                            <div class="comment-avatar" style="background-color: #198754;">MC</div>
+                            <div class="comment-author ms-3">
+                                <strong>María Cortez</strong>
+                                <small class="text-muted">Hace 3 días</small>
+                            </div>
+                        </div>
+                        <div class="comment-body mt-2">
+                            <p>¿Alguien ha probado estos consejos? Me gustaría saber sus experiencias.</p>
+                            <button class="btn btn-sm btn-outline-primary reply-btn">Responder</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de comentario -->
+                <form class="comment-form mt-4">
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Añade tu comentario..." rows="3"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Publicar comentario</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>FABRYKA GYM</h5>
+                    <p>Tu lugar para entrenar y crecer.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h5>Mapa</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery/jquery-3.7.1.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/precios.js"></script>
+    <script src="../js/animaciones.js"></script>
+    <script src="../js/filtros.js"></script>
+    <script src="../js/contadores.js"></script>
+    <script src="../js/habilidades.js"></script>
+    <script src="../js/rating.js"></script>
+    <script src="../js/carrusel.js"></script>
+    <script src="../js/formularios.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+
+</html>

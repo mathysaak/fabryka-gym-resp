@@ -1,0 +1,95 @@
+/* Custom CSS para FABRYKA GYM */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Ajuste para Font Awesome */
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('assets/fonts/fa-solid-900.woff2') format('woff2'),
+        url('assets/fonts/fa-solid-900.ttf') format('truetype');
+}
+
+/* SPRITES */
+/* ENTRENADORES */
+.card-img.bg-profesor_crossfit {
+    width: 1024; 
+    background: url('../assets/images/profesor-crossfit.jpg');
+}
+
+.bg-profesor_crossfit2 {
+    background-image: url('../assets/images/crossfit-profesor.jpg');
+}
+
+.card-img.bg-yoga_profesora {
+    width: 424px;
+    background: url('../assets/images/yoga-profesora.jpg');
+}
+
+/* CLASES */
+.card-img.bg-clases2 {
+    width: 683px; height: 683px;
+    background: url('../assets/sprites/css_sprites-clases.png') -1586px -10px;
+}
+
+.card-img.bg-musculacion {
+    width: 768px; height: 768px;
+    background: url('../assets/sprites/css_sprites-clases.png') -10px -10px;
+}
+
+.card-img.bg-musculacion2 {
+    width: 768px; height: 768px;
+    background: url('../assets/sprites/css_sprites-clases.png') -798px -10px;
+}
+
+.card-img.bg-yoga_avanzado {
+    width: 768px; height: 768px;
+    background: url('../assets/sprites/css_sprites-clases.png') -200px -798px;
+}
+
+.card-img.bg-bicis {
+    width: 768px; height: 768px;
+    background: url('../assets/sprites/css_sprites-clases.png') -798px -798px;
+}
+
+/* BLOG */
+.card-img.bg-clases {
+    width: 600px;;
+    background: url('../assets/images/clases.jpeg');
+}
+
+.card-img.bg-motivacion {
+    width: 626px; height: 417px;
+    background: url('../assets/images/motivacion.jpeg');
+}
+
+.card-img.bg-nutricion {
+    width: 736px;
+    background: url('../assets/images/nutricion.jpeg');
+}
+.card-img.bg-salud {
+    width: 250px;
+    background: url('../assets/images/suplementos-naturales.jpeg');
+}
+.card-img.bg-tecnica{
+    width: 250px;
+    background: url('../assets/images/tecnicas-avanzadas.jpeg');
+}
+
+
+/* TESTIMONIOS */
+.card-img.bg-testimonio {
+    width: 767px; height: 767px;
+    background: url('../assets/images/testimonio3.jpeg') -798px -10px;
+}
+
+.card-img.bg-testimonio3 {
+    width: 626px; height: 417px;
+    background: url('../assets/images/testimonio2.jpeg') -10px -798px;
+}
+
+.card-img.bg-crossfit {
+    width: 768px; height: 768px;
+    background: url('../assets/images/testimonio.jpg') -10px -10px;
+}
+

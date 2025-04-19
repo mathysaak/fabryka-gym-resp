@@ -1,0 +1,116 @@
+/* ------------------------- */
+/* ESTILOS PARA EL BLOG */
+/* ------------------------- */
+
+/* Diseño tipo periódico con CSS Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .blog-card.featured {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+.blog-card .card {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card .card-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.blog-card.featured .card-img {
+    height: 350px;
+}
+
+.blog-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blog-card .card:hover .overlay {
+    opacity: 1;
+}
+
+.blog-card .badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.tags .badge {
+    margin-right: 5px;
+}
+
+/* Estilos para comentarios */
+.comments-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.comment {
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.comment-reply {
+    border-left: 3px solid #dee2e6;
+    padding-left: 15px;
+}
+
+.comment-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.reply-btn {
+    font-size: 0.8rem;
+    padding: 0.15rem 0.5rem;
+}
+
+/* Animaciones para scroll reveal */
+[data-aos] {
+    transition-property: transform, opacity;
+}
