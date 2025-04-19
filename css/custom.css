@@ -1,7 +1,9 @@
-@import url('/css/base.css');
-@import url('/css/pages/blog-section.css');
-@import url('/css/pages/contact-secntion.css');
-@import url('/css/pages/entrenadores-section.css');
+@import url('../css/base.css');
+@import url('../css/pages/blog-section.css');
+@import url('../css/pages/contact-secntion.css');
+@import url('../css/pages/entrenadores-section.css');
+
+
 /* Hero */
 .hero {
     height: 100vh;
