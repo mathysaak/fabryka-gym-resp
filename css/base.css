@@ -13,17 +13,23 @@ body {
 /* SPRITES */
 /* ENTRENADORES */
 .card-img.bg-profesor_crossfit {
-    width: 1024; 
+
     background: url('../assets/images/profesor-crossfit.jpg');
+    background-size: 1024px; /* Add proper unit */
+    width: 100%; /* Ensure proper container sizing */
 }
 
 .bg-profesor_crossfit2 {
     background-image: url('../assets/images/crossfit-profesor.jpg');
+    background-size: 1024px; /* Add proper unit */
+    width: 100%; /* Ensure proper container sizing */
 }
 
 .card-img.bg-yoga_profesora {
-    width: 424px;
+
     background: url('../assets/images/yoga-profesora.jpg');
+    background-size: 424px; /* Add proper unit */
+    width: 100%; /* Ensure proper container sizing */
 }
 
 /* CLASES */
